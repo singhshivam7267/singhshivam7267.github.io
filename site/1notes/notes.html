@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML:5></title>
+</head>
+<body>
+                                                           <!-- Antanomy of an HTML -->
+
+<p> <h1>Attribute:-</h1>Attribute is a name value pair that is kind of a meta data about the element itself that it's being applied to. <br> for example,<h2> <element> id="myId" </element> </h2> we are assigning myId as the value of the id attribute. <br>
+    Each attribute has its own rules for the meaning of its value. So for example, id attribute, being assigned as an example, has to be unique within the scope of the entire HTML document. In other words, no other element of any kind in the webpage is allowed to have its id attribute equal to the string myID. If there's another element with the same value for id that would mean that the webpage contains invalid HTML which can potentially break some style lingo, even functionality of the webpage. <br>
+    attributes can only be specified on the opening tag, so you can't specify an attribute on the closing tag.
+</p>
+<br>
+<p>
+   <h2>spacing rule in defining tag :-</h2> No space is allowed to exist between the opening bracket and the tag name. And likewise, space is not allowed between the opening bracket and the foreword slash of the closing tag. However, you must have at least one space between the tag itself and any of its attributes, and space is allowed everywhere else and is simply ignored.
+</p>
+<br>
+<p>
+    <h2>Use of quotes in attribute:-</h2>
+    In HTML5, enclosing the value of the attribute in quotes is technically, actually not required in all circumstances. But never the less, it's best practice to always surround the value of the attribute in either single or double quotes. It doesn't matter whether you use single or double quotes. They really are equivalent in HTML. A more interesting case arises when the value of the attribute itself contains quotes. So the actual value has quotes as part of its value. In this type of situation, the only thing you have to watch out for is making sure you close the quote in opposite order of opening them. So if the last quote was a single quote, it must be closed first. Which quotes you start with doesn't make any difference.
+</p> <br>
+<p>
+    <h2>Tag without any content:-</h2> if you've dealt with previous versions of HTML, especially XHTML, you might be familiar with the idea of a self-closing tag. A self-closing tag is basically an XML type of shorthand notation for a tag that happens to not to contain any content.so to specify a tag without any content inside HTML5, we have to provide opening and the closing tags without any space in-between them to signify and to communicate the lack of content as surrounded by this tag. and this rules are a little bit different than for the previous versions of HTML. 
+</p>
+
+
+                                                                    <!--HTML document structure  -->
+                                                                
+<p>
+    <!-- <!DOCTYPE html> -->
+    <h1>html body structure</h1>
+    <h2>!DOCTYPE html:_</h2>every HTML page should start with the doc type or document type declaration. The words doc type or HTML could be lower or upper case. The only thing you have to watch out for is that there shouldn't be any space between less than exclamation point and the word doc type.All it does is tell the browser that it should get ready to render HTML.
+    <hr>
+    What else would there be if not HTML? There doesn't seem to be any practical purpose for this declaration.This declaration is really largely historical. When HTML standards were first becoming popular, the web was full of pages that were not compliant with the standards. To help browsers render those pages correctly, browsers used the doctype declaration to distinguish between noncompliant and compliant pages. Noncompliant pages were rendered in what's called the quirks mode, and the compliant pages were rendered in what's called the standards mode. Now, that's all historical. But what you need to know today is that if you leave off the HTML page declaration, that will signal to the browser that it should treat your pages as one not following HTML standard.
+</p>
+<p>
+    <h2>tag:-</h2>the html tag, and that's basically a tag that contains the entire html document. After the html tag, goes the head tag. The head tag contains items that describe the main content of the page.Things like what character coding should the browser use for the main content. It can contain authors description of the page, page title, and whatever other external resources are needed to render the page properly, among other things. The point is it contains some metadata about the main content <br>
+    it's always a good idea to specify the character set that the browser should know how to interpret the content of the webpage. The most commonly used character set is UTF 8. Also note that the meta tag is a stand alone tag.  The most commonly used character set is UTF 8. Also note that the meta tag is a stand alone tag. There is no closing meta tag. Next we'll specify the title of the page. The body tag is the root of all content that is visible to the user. It is often referred to as a viewport.HTML is rendered by the browser sequentially, meaning top to bottom. And it renders it top to bottom as well.
+</p>       
+
+                                                                <!-- HTML content model -->
+                
+<p>
+   <h2>content model:-</h2> The term content model refers to the full behavior the browser applies to the elements belonging to that content model, and to the nesting rules of those elements.In other words, which elements are allowed to be nested inside which other elements. <br>
+    HTML elements were either block level or inline elements.while HTML5 split these two content models into seven models.All elements fall into basically two categories under the traditional content model structure. <li>block level elements </li> <li> inline elements.</li> 
+    <h3>block level:-</h3> Block level elements render to begin on the new line by default. You could change that with CSS. So what that means is every time you specify a block-level element in HTML, the browser will automatically place that element on a new line in the flow of the document.Block-level elements are allowed to contain inline or other block-level elements within them. 
+
+    <h3>inline element:-</h3> inline elements, which render on the same line by default. Again you can change that, but by default it renders on the same line.Inline elements also have a restriction that they can only contain other in line elements. In other words, an inline element cannot have as part of its content a block level element.
+    <br> but HTML5 replaces these definitions with a more complex set of content categories.but we study it Well the reason we're going over them now is because this distinction between block level elements and inline elements remains pretty practical. Because it aligns very well with still existing CSS rules. So even though HTML5 came up with new content model names and new sub categories, and just new way to break them down. At the end of the day, you could still look at all of these, as far as your coding is concerned, as block-level elements and inline elements. And just to be kind of complete, <b> block-level elements roughly translate into the new HTML5 category of flow content, and inline elements roughly translate into the HTML5 category of phrasing content.</b> <i>The div element stands for division, and the span element stands for span. The div element is your most generic block-level element, and the span is your super generic, inline element</i>
+</p>
+                                                  <!-- Heading Elements (and some new HTML5 semantic comments) -->
+
+<p>
+   <h2>Semantic:-</h2>semantic is relating to meaning in language or logic. In other words, it has some inherent meaning, the names have some inherent meaning. Now when it applies to HTML,then the meaning of a semantic html element is an element that implies some meaning to the content. In other words, it's an element that tells you something about the content, whether its importance, whether it's a little bit of its description, it basically hints to you to that meaning.
+   <li>it may help search engine rankings. In other words, SEO and SEO stands for search engine optimization. <ul> Now I stress may here because there is some controversy and disagreement among experts if this is really true. Now experts who disagree with this say that modern search engines are so sophisticated nowadays that just about nothing other than the content itself affects the ranking of the page.</ul> </li>
+   <h3>Semantic tag:-</h3>
+   <li>
+    an example of the first type of semantic tags that we're going to look at, is headings tag.The HTML h1 to h6 elements represent six levels of section headings.And these headings are trying to convey is that the heading content between opening h1 and the closing h1 element is the most important heading in the document, and on, and on.so h1 is the highest section level and h6 is the lowest.
+        <h1>Heading element</h1>
+        <h2>Heading element</h2>
+        <h3>Heading element</h3>
+        <h4>Heading element</h4>
+        <h5>Heading element</h5>
+        <h6>Heading element</h6>
+     First, even though their default rendering in the browser appears to give them visual distinction, these should not be used for styling. These elements are only meant to convey structure of your HTML page, nothing more. With CSS, any regular development can be styled to look like any one of these heading tags.
+     <br>So, why not just use a div? Because if we did, we would lose the meaning of what a heading is. Second, something that's marked h1 is obviously the most important and generalized description of the content of this page. And while there are disagreements among the SEO experts about how effective these semantic tags are for helping your search engine rank in general, everyone agrees that when it comes to the heading tags, and specifically the h1 tag, that it is of utmost importance to use it and that it should contain the wording, which truly conveys the central topic of the rest of the content.
+   </li>
+<li>the header tag basically contains some header information about the page. So usually, it consists of company logo, some tagline, sometimes, navigation. Actually, often, navigation is contained within the header as well.</li>
+<li>The nav tag signifies some content that is used for navigation within our website.</li>
+<li>An aside tag is basically an element that communicates that there's something that is inside of this element that is related to the main content of the page, but not as direct a relationship as the main content.</li>
+<li>we have the footer tag, which, just like it sounds, has the footer information in it.</li>
+NOTE:- <i>semantic elements do allow you for more meaningful expression of the structure of your HTML code, HTML page, but they do not really give you any more functionality than a regular div or regular span would without it.
+</i> 
+</p>
+                                                                <!-- List -->                                                            
+
+<p>
+    <h3>List:-</h3>
+    The HTML li element is used to represent an item in a list. It must be contained in a parent element: an ordered list (ol), an unordered list (ul), or a menu (menu). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter. lists provide a natural and commonly used grouping for contennt. lists are an incredibly useful HTML structure that allows you to group related content. list are of two type
+<li>oredered list(ol)</li>
+<li>unordered list(ul)</li>
+NOTE:- <i> <b>text not allowed inside ul element only thing is allowed inside a ul element is an li element. Anything else is not allowed.</b></i>
+<h4>ORDERED LIST:-</h4>
+<ol>
+<li>in ordered list ,list element are displayed with an ascending counter on the left, such as a number or letter.</li>
+<li>ordered list within ordered list
+    <ol>
+        <li>by this way we use ordered list(<b>ol</b> ) within ordered list(<b>ol</b> ) or unorderd list(<b>ul</b> )</li>
+    </ol>
+</li>
+</ol>
+<h4>UNORDERED LIST(ul)</h4>
+<ul>
+    <li>
+        In menus and unordered lists, list items are usually displayed using bullet points.
+    </li>
+    <LI>unordered list within unorderedlist
+        <ul>
+            <li>by this way we use <b>ul</b> within <b>ul or ol</b></li>
+        </ul>
+    </LI>
+</ul>
+</p>  
+<!-- HTML Character Entity References -->
+<h1>HTML Character Entity References</h1>   
+<p>
+    Since HTML uses certain characters for its syntax, we need a way to differentiate between those characters as HTML and those same characters as content. If we want the browser to interpret special HTML characters as regular content, we need a way to escape them. In other words, we need a way to tell the browser not to interpret them as HTML.
+    <br>Specifically, there are three characters that should always be escaped to make sure they don't cause rendering issues, either right away or down the line. And these characters are the following. The less than  character, the greater than(>) character and the &.<br> Instead of using the less than character, you should use the HTML entity which starts with & and then followed by lt; (&lt;).
+    And similarly, for the > character,use HTML entity & and then followed by gt;(&gt;). And for the & it is & followed by amp; (&amp;).
+    <br>for copyright symbol we also use HTML entity refrence since in various keyboard there is no key for this so for copyright symbol the HTML entity refrences is & followedby copy (&copy;).
+    <br>now another HTML entity refrence is & followed by nbsp; this is use when you to write some text which is always together like some quotes so that while wrapping your text the particular text are always stay the same.for example victory&nbsp;nor&nbsp;defeat.
+    <br> NOTE:-but some time the total misuse of this entity as to add extra space between two words people use non breaking space entitywhich is wrong so for makin g space b/w two words you would probably wrap some text in span tag and then apply some margin.
+    <br>another HTML entity refrenceis & followed by quot;(& quot;)it's especially useful when somebody's trying to write an HTML based email. Since the email clients are notorious for using a much more limited character set than UTF-8, some of the characters sometimes get messed up.HTML entities safe guard against more limited character set encodings.
+</p>  
+<!-- creating links -->
+<p>
+    <h4>links:-</h4 >
+      links is created by specifying an <b><i> a element</i> with an attribute href</b>. And href stands for hypertext reference. The value of href can either be a relative or an absolute URL.internal links are relative URL link. 
+      the a tag is both a flow content and a phrasing content.the a tag(anchor tag) in the HTML5 is both an inline element and a block level element at the same time.
+     <br>URL:-URL stand for uniform resource locator.it give location of any thing in web page and it is unique.
+    <a href="../examples/"><div>html exercise</div></a>
+    The authors of the HTML5 specification realized that there are a lot of times where you would like to be able to click on a whole region. And a most common occurrence of that is on when you have a logo or some sort of a company name in the top left corner for example, of your webpage. People expect to be able to click on that and be able to go to the front page of the company. Prior to HTML5, people had to use all kinds of tricks in order to achieve that effect because the a tag was only an inline tag, and you weren't really able to wrap the a tag around the div tag.
+    </p>
+    
+
+</body>
+</html>                                                            

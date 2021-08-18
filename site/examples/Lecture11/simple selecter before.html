@@ -1,0 +1,58 @@
+<!-- CSS selectors are used to determine which HTML element, or set of elements, to apply the CSS declarations to -->
+<!-- The browser uses its selector API to traverse the DOM or Document Object Model, and pick out the elements matching the selector -->
+<!-- lot of JavaScript libraries out there use the browser selector API to attach behavior and data to HTML elements. Much in the same way that CSS applies style to those elements.  -->
+<!-- element selector--it is just you specifying the element name. For example, in this case, p for paragraph says that every paragraph in our HTML document should be colored blue. -->
+<!-- class selector--it is specified with a dot and the name of the class. e.g.--(.blue)we're creating a blue class, a blue CSS class, that will color whatever it targets with the color blue. Notice that a different paragraph that is not marked with attribute class="blue" is completely unaffected by this. we define class by .blue{...} and we use it by applying attribute class="blue" -->
+<!-- id selector:-The way you specify an id selector is by specifying the value of an id of an element within your HTML document, preceded by a pound sign [  #name{colour: blue;}  ]. So the name is a value of some id within our HTML document.  -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simple Selectors</title>
+<style>
+
+/* all h2 elements */
+xxx {
+  color: red;
+  text-align: center;
+}
+
+
+/* all with class="highlight" */
+xxx {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: green;
+  opacity: .6;
+}
+
+/* element with id="mainPoint" */
+xxx {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: red;
+  opacity: .7;
+}
+
+/* all p AND h1 elements */
+xxx {
+  color: blue;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Simple Selectors (h1)</h1>
+<h2>Subheading 1 (h2)</h2>
+<p class="highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?</p>
+<p class="highlight">Paragraph with attribute class="highlight". Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<h2>Subheading 2 (h2)</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nemo ipsum dolores vel modi magnam veniam alias at nam. Voluptatem officiis dolor dolorem aspernatur dolorum modi ipsa, nobis animi aut!</p>
+<div>This is the main point of the entire article. So, attribute 
+<span id="mainPoint">id="mainPoint".</span> </div>
+
+</body>
+</html>

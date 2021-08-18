@@ -1,0 +1,39 @@
+<!-- Combining Selectors:- -->
+<!-- 1:--the first one is with element with class selector. this only affect p tag having class="big" p.big{ font-size: 20px }  As you can see here we have a P element followed immediately without any spaces by a dot big which is a A class selector. And what this expresses is that I want to target every p element that has an attribute class equal to big. Note the lack of space between the element that the class definition. If you do put a space it will mean a completely different combination so make sure that if you want an element that has a class assigned to a particular value that there's no spaces between the first selector and the second selector in this case between the P element selector and the .big class selector. This technique is pretty commonly used when you have a CSS class definition that applies to different elements but when it's applied to a particular element you would like the styling to slightly change. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Element with Class Selector
+</title>
+<style>
+
+/* all with class="highlight" */
+xxx {
+  background-color: green;
+}
+
+/* all p elements with class="highlight" */
+xxx {  
+  font-style: italic;
+}
+
+/* all elements with class 'highlight' as well as with class 'mainpoint'. */
+xxx {
+  color: red;
+  background-color: black;
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="highlight">Element with Class Selector</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?</p>
+<p class="highlight">This is P with CLASS="highlight"</p>
+<div class="mainpoint highlight">This is the main point of the entire article.
+  <!-- And notice the way you apply multiple classes to an element is just by listing them in the class attribute with a space between them.  -->
+</div>
+
+</body>
+</html>
