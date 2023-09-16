@@ -9,10 +9,13 @@ div {
   background-color: #00FFFF;
 }
 p {
+  /* So we're saying the width should be 50% of its containing element, and the containing element is the div. Well, the div is a block level element, so it tries to fill in the entire width of its containing element, which is the body or the entire browser. So basically what we're saying is that a paragraph should take 50% of the entire view port. */
   width: 50%;
+
   border: 1px solid black;
   float: left;
-}
+  /* The second paragraph is still on the bottom. Why is this happening? Well, the reason this is happening is because we're still using the default box sizing, which is content box. Then we're saying that we want the box to take 50% of the screen and then we're adding that one pixel border, that really breaks the whole thing. So if we remove that pixel right here, and refresh the browser, now it's floating exactly how we want it. And by the way, this is a great illustration of what happens to floated elements when they can't fit on the same line.  And what happens is they float to the next line. And this is actually what happened when we had the border pushing the size of the box a little bit too much that it didn't fit on the same line anymore.so how do we fix this? Well hopefully you still remember how to reset the box-sizing, and the box-sizing we're going to say is border-box. And once we do that, the border will be included in the 50% of the width,*/
+  /* the layouts have a two column layout, and as I squeeze the browser, the two column layout stays, and not only that, they're flexible. And the reason they're flexible is because we didn't specify them with a particular pixel size, we specified them as a percentage of its container element. */
 
 #p1 {
   background-color: #A52A2A;

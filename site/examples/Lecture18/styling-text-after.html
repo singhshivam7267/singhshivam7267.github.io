@@ -5,12 +5,16 @@
 <title>Styling Text</title>
 <style>
 .style {
+   /*font-family: is a property name and value of property can be varry . It basically gives you commonly used font combinations. So what you usually put in the font-family is the value is combinations of fonts. */
   font-family: Arial, Helvetica, sans-serif;
-  color: #0000ff;
+  color: #03039c;
+  /* The property font-style is the one that specifies whether or not you want something to be italic or normal. */
   font-style: italic;
+  /* font-weight can be specified from basically normal to bold. And you can also specify it using numbers. but in practice people just use the word bold as a predefined keyword so that's also good enough and about equals 900 anyway.  */
   font-weight: bold;
-  font-size: 24px; /* points (pt) are used in print, not screen.*/
-  text-transform: uppercase;
+  font-size: 24px; /*points (pt) are used in print, not screen. very browser out there has a default font size of 16 pixels.  */
+  /* Pixels are what's considered absolute unit of measurement for size. However, they do have a bit of a relative component to them. Pixels are relative to the viewing device. For low DPI or low dots per inch devices, one pixel is one device pixel dot of the display. For printers and high-resolution screens, one pixels implies multiple device pixels. Point is, higher DPI devices will give you sharper text, because for every pixel that it's drawing, it's actually drawing multiple pixels on the device. */
+  text-transform: uppercase; /*it allows you to basically control how your text looks. */
   text-align: right;  
 }
 </style>

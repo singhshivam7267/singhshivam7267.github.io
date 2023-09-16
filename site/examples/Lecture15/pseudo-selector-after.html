@@ -7,35 +7,50 @@
 /* Styles go here. */
 header li {
   list-style: none;
+  /* to style an unordered list as a bunch of menu button by turn off the bullet points by saying list-style: none.   */
 }
-a:link, a:visited {
+/* a:link, a:visited {
+   /* styling links is not exactly as straight forward as styling a regular element, and that's because links have states. And these states can be expressed using our pseudo-classes. 
+   links can be styled differently depending on what state they are in.
+
+The four links states are:
+
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked*/
   text-decoration: none;
-  background-color: green;
+  background-color: rgb(128, 0, 85);
   border: 1px solid blue;
   color: black;
+  /* a element is both sort of an inline element and a block level element. However, that's only as far as inclusion of other elements inside of it is concerned. s far as this default display, it's actually displayed as an inline element. Well we don't want that for our buttons, we want them to block level element. Well I can change that very quickly by just saying display: block.  */
   display: block;
   width: 200px;
   text-align: center;
   margin-bottom: 1px;
-}
-
-a:hover, a:active {
+} */
+/* when the user hovers over the element, in this case the a element. An active is that state when the user actually clicks on the element but hasn't yet released his click. */
+/* a:hover,a:active {
   background-color: red;
   color: purple;
-}
-
+} */
+/* the nth child pseudo-selector allows you to target a particular element within a list. */
 header li:nth-child(3) {
-  font-size: 24px;
+  font-size: 25px;
 }
 
-section div:nth-child(odd) {
+section div:nth-child(even) {
   background-color: gray;
 }
 
-section div:nth-child(4):hover {
+section div:nth-child(odd):hover {
   background-color: green;
   cursor: pointer;
 }
+/* section div:nth-child(3):hover{
+  background-color: red;
+  mtlb maine ye paaya agr comma se seprated hai to to dono selector pe css rule lagega 
+} */
 
 </style>
 </head>
@@ -53,6 +68,7 @@ section div:nth-child(4):hover {
 <section>
   <div>DIV 1</div>
   <div>DIV 2</div>
+  <!-- <div> <li><a href="/">Home</a></li></div> -->
   <div>DIV 3</div>
   <div>DIV 4</div>
   <div>DIV 5</div>

@@ -1,131 +1,599 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML:5></title>
+    <style>
+        body {
+            background-color: rgb(241, 180, 216);
+            color: #b10e0e;
+        }
+
+        a:hover,
+        a:active {
+            background-color: red;
+            color: purple;
+        }
+    </style>
 </head>
+
 <body>
-                                                           <!-- Antanomy of an HTML -->
+    <!-- Antanomy of an HTML -->
 
-<p> <h1>Attribute:-</h1>Attribute is a name value pair that is kind of a meta data about the element itself that it's being applied to. <br> for example,<h2> <element> id="myId" </element> </h2> we are assigning myId as the value of the id attribute. <br>
-    Each attribute has its own rules for the meaning of its value. So for example, id attribute, being assigned as an example, has to be unique within the scope of the entire HTML document. In other words, no other element of any kind in the webpage is allowed to have its id attribute equal to the string myID. If there's another element with the same value for id that would mean that the webpage contains invalid HTML which can potentially break some style lingo, even functionality of the webpage. <br>
+    <p>
+    <h1>Attribute:-</h1>Attribute is a name value pair that is kind of a meta data about the element itself that it's
+    being applied to. <br> for example,<h2>
+        <element> id="myId" </element>
+    </h2> we are assigning myId as the value of the id attribute. <br>
+    Each attribute has its own rules for the meaning of its value. So for example, id attribute, being assigned as an
+    example, has to be unique within the scope of the entire HTML document. In other words, no other element of any kind
+    in the webpage is allowed to have its id attribute equal to the string myID. If there's another element with the
+    same value for id that would mean that the webpage contains invalid HTML which can potentially break some style
+    lingo, even functionality of the webpage. <br>
     attributes can only be specified on the opening tag, so you can't specify an attribute on the closing tag.
-</p>
-<br>
-<p>
-   <h2>spacing rule in defining tag :-</h2> No space is allowed to exist between the opening bracket and the tag name. And likewise, space is not allowed between the opening bracket and the foreword slash of the closing tag. However, you must have at least one space between the tag itself and any of its attributes, and space is allowed everywhere else and is simply ignored.
-</p>
-<br>
-<p>
+    </p>
+    <br>
+    <p>
+    <h2>spacing rule in defining tag :-</h2> No space is allowed to exist between the opening bracket and the tag name.
+    And likewise, space is not allowed between the opening bracket and the foreword slash of the closing tag. However,
+    you must have at least one space between the tag itself and any of its attributes, and space is allowed everywhere
+    else and is simply ignored.
+    </p>
+    <br>
+    <p>
     <h2>Use of quotes in attribute:-</h2>
-    In HTML5, enclosing the value of the attribute in quotes is technically, actually not required in all circumstances. But never the less, it's best practice to always surround the value of the attribute in either single or double quotes. It doesn't matter whether you use single or double quotes. They really are equivalent in HTML. A more interesting case arises when the value of the attribute itself contains quotes. So the actual value has quotes as part of its value. In this type of situation, the only thing you have to watch out for is making sure you close the quote in opposite order of opening them. So if the last quote was a single quote, it must be closed first. Which quotes you start with doesn't make any difference.
-</p> <br>
-<p>
-    <h2>Tag without any content:-</h2> if you've dealt with previous versions of HTML, especially XHTML, you might be familiar with the idea of a self-closing tag. A self-closing tag is basically an XML type of shorthand notation for a tag that happens to not to contain any content.so to specify a tag without any content inside HTML5, we have to provide opening and the closing tags without any space in-between them to signify and to communicate the lack of content as surrounded by this tag. and this rules are a little bit different than for the previous versions of HTML. 
-</p>
+    In HTML5, enclosing the value of the attribute in quotes is technically, actually not required in all circumstances.
+    But never the less, it's best practice to always surround the value of the attribute in either single or double
+    quotes. It doesn't matter whether you use single or double quotes. They really are equivalent in HTML. A more
+    interesting case arises when the value of the attribute itself contains quotes. So the actual value has quotes as
+    part of its value. In this type of situation, the only thing you have to watch out for is making sure you close the
+    quote in opposite order of opening them. So if the last quote was a single quote, it must be closed first. Which
+    quotes you start with doesn't make any difference.
+    </p> <br>
+    <p>
+    <h2>Tag without any content:-</h2> if you've dealt with previous versions of HTML, especially XHTML, you might be
+    familiar with the idea of a self-closing tag. A self-closing tag is basically an XML type of shorthand notation for
+    a tag that happens to not to contain any content.so to specify a tag without any content inside HTML5, we have to
+    provide opening and the closing tags without any space in-between them to signify and to communicate the lack of
+    content as surrounded by this tag. and this rules are a little bit different than for the previous versions of HTML.
+    </p>
 
 
-                                                                    <!--HTML document structure  -->
-                                                                
-<p>
-    <!-- <!DOCTYPE html> -->
+    <!--HTML document structure  -->
+
+    <p>
+        <!-- <!DOCTYPE html> -->
     <h1>html body structure</h1>
-    <h2>!DOCTYPE html:_</h2>every HTML page should start with the doc type or document type declaration. The words doc type or HTML could be lower or upper case. The only thing you have to watch out for is that there shouldn't be any space between less than exclamation point and the word doc type.All it does is tell the browser that it should get ready to render HTML.
+    <h2>!DOCTYPE html:_</h2>every HTML page should start with the doc type or document type declaration. The words doc
+    type or HTML could be lower or upper case. The only thing you have to watch out for is that there shouldn't be any
+    space between less than exclamation point and the word doc type.All it does is tell the browser that it should get
+    ready to render HTML.
     <hr>
-    What else would there be if not HTML? There doesn't seem to be any practical purpose for this declaration.This declaration is really largely historical. When HTML standards were first becoming popular, the web was full of pages that were not compliant with the standards. To help browsers render those pages correctly, browsers used the doctype declaration to distinguish between noncompliant and compliant pages. Noncompliant pages were rendered in what's called the quirks mode, and the compliant pages were rendered in what's called the standards mode. Now, that's all historical. But what you need to know today is that if you leave off the HTML page declaration, that will signal to the browser that it should treat your pages as one not following HTML standard.
-</p>
-<p>
-    <h2>tag:-</h2>the html tag, and that's basically a tag that contains the entire html document. After the html tag, goes the head tag. The head tag contains items that describe the main content of the page.Things like what character coding should the browser use for the main content. It can contain authors description of the page, page title, and whatever other external resources are needed to render the page properly, among other things. The point is it contains some metadata about the main content <br>
-    it's always a good idea to specify the character set that the browser should know how to interpret the content of the webpage. The most commonly used character set is UTF 8. Also note that the meta tag is a stand alone tag.  The most commonly used character set is UTF 8. Also note that the meta tag is a stand alone tag. There is no closing meta tag. Next we'll specify the title of the page. The body tag is the root of all content that is visible to the user. It is often referred to as a viewport.HTML is rendered by the browser sequentially, meaning top to bottom. And it renders it top to bottom as well.
-</p>       
+    What else would there be if not HTML? There doesn't seem to be any practical purpose for this declaration.This
+    declaration is really largely historical. When HTML standards were first becoming popular, the web was full of pages
+    that were not compliant with the standards. To help browsers render those pages correctly, browsers used the doctype
+    declaration to distinguish between noncompliant and compliant pages. Noncompliant pages were rendered in what's
+    called the quirks mode, and the compliant pages were rendered in what's called the standards mode. Now, that's all
+    historical. But what you need to know today is that if you leave off the HTML page declaration, that will signal to
+    the browser that it should treat your pages as one not following HTML standard.
+    </p>
+    <p>
+    <h2>tag:-</h2>the html tag, and that's basically a tag that contains the entire html document. After the html tag,
+    goes the head tag. The head tag contains items that describe the main content of the page.Things like what character
+    coding should the browser use for the main content. It can contain authors description of the page, page title, and
+    whatever other external resources are needed to render the page properly, among other things. The point is it
+    contains some metadata about the main content <br>
+    it's always a good idea to specify the character set that the browser should know how to interpret the content of
+    the webpage. The most commonly used character set is UTF 8. Also note that the meta tag is a stand alone tag. The
+    most commonly used character set is UTF 8. Also note that the meta tag is a stand alone tag. There is no closing
+    meta tag. Next we'll specify the title of the page. The body tag is the root of all content that is visible to the
+    user. It is often referred to as a viewport.HTML is rendered by the browser sequentially, meaning top to bottom. And
+    it renders it top to bottom as well.
+    </p>
 
-                                                                <!-- HTML content model -->
-                
-<p>
-   <h2>content model:-</h2> The term content model refers to the full behavior the browser applies to the elements belonging to that content model, and to the nesting rules of those elements.In other words, which elements are allowed to be nested inside which other elements. <br>
-    HTML elements were either block level or inline elements.while HTML5 split these two content models into seven models.All elements fall into basically two categories under the traditional content model structure. <li>block level elements </li> <li> inline elements.</li> 
-    <h3>block level:-</h3> Block level elements render to begin on the new line by default. You could change that with CSS. So what that means is every time you specify a block-level element in HTML, the browser will automatically place that element on a new line in the flow of the document.Block-level elements are allowed to contain inline or other block-level elements within them. 
+    <!-- HTML content model -->
 
-    <h3>inline element:-</h3> inline elements, which render on the same line by default. Again you can change that, but by default it renders on the same line.Inline elements also have a restriction that they can only contain other in line elements. In other words, an inline element cannot have as part of its content a block level element.
-    <br> but HTML5 replaces these definitions with a more complex set of content categories.but we study it Well the reason we're going over them now is because this distinction between block level elements and inline elements remains pretty practical. Because it aligns very well with still existing CSS rules. So even though HTML5 came up with new content model names and new sub categories, and just new way to break them down. At the end of the day, you could still look at all of these, as far as your coding is concerned, as block-level elements and inline elements. And just to be kind of complete, <b> block-level elements roughly translate into the new HTML5 category of flow content, and inline elements roughly translate into the HTML5 category of phrasing content.</b> <i>The div element stands for division, and the span element stands for span. The div element is your most generic block-level element, and the span is your super generic, inline element</i>
-</p>
-                                                  <!-- Heading Elements (and some new HTML5 semantic comments) -->
+    <p>
+    <h2>content model:-</h2> The term content model refers to the full behavior the browser applies to the elements
+    belonging to that content model, and to the nesting rules of those elements.In other words, which elements are
+    allowed to be nested inside which other elements. <br>
+    HTML elements were either block level or inline elements.while HTML5 split these two content models into seven
+    models.All elements fall into basically two categories under the traditional content model structure. <li>block
+        level elements </li>
+    <li> inline elements.</li>
+    <h3>block level:-</h3> Block level elements render to begin on the new line by default. You could change that with
+    CSS. So what that means is every time you specify a block-level element in HTML, the browser will automatically
+    place that element on a new line in the flow of the document.Block-level elements are allowed to contain inline or
+    other block-level elements within them.
 
-<p>
-   <h2>Semantic:-</h2>semantic is relating to meaning in language or logic. In other words, it has some inherent meaning, the names have some inherent meaning. Now when it applies to HTML,then the meaning of a semantic html element is an element that implies some meaning to the content. In other words, it's an element that tells you something about the content, whether its importance, whether it's a little bit of its description, it basically hints to you to that meaning.
-   <li>it may help search engine rankings. In other words, SEO and SEO stands for search engine optimization. <ul> Now I stress may here because there is some controversy and disagreement among experts if this is really true. Now experts who disagree with this say that modern search engines are so sophisticated nowadays that just about nothing other than the content itself affects the ranking of the page.</ul> </li>
-   <h3>Semantic tag:-</h3>
-   <li>
-    an example of the first type of semantic tags that we're going to look at, is headings tag.The HTML h1 to h6 elements represent six levels of section headings.And these headings are trying to convey is that the heading content between opening h1 and the closing h1 element is the most important heading in the document, and on, and on.so h1 is the highest section level and h6 is the lowest.
+    <h3>inline element:-</h3> inline elements, which render on the same line by default. Again you can change that, but
+    by default it renders on the same line.Inline elements also have a restriction that they can only contain other in
+    line elements. In other words, an inline element cannot have as part of its content a block level element.
+    <br> but HTML5 replaces these definitions with a more complex set of content categories.but we study it Well the
+    reason we're going over them now is because this distinction between block level elements and inline elements
+    remains pretty practical. Because it aligns very well with still existing CSS rules. So even though HTML5 came up
+    with new content model names and new sub categories, and just new way to break them down. At the end of the day, you
+    could still look at all of these, as far as your coding is concerned, as block-level elements and inline elements.
+    And just to be kind of complete, <b> block-level elements roughly translate into the new HTML5 category of flow
+        content, and inline elements roughly translate into the HTML5 category of phrasing content.</b> <i>The div
+        element stands for division, and the span element stands for span. The div element is your most generic
+        block-level element, and the span is your super generic, inline element</i>
+    </p>
+    <!-- Heading Elements (and some new HTML5 semantic comments) -->
+
+    <p>
+    <h2>Semantic:-</h2>semantic is relating to meaning in language or logic. In other words, it has some inherent
+    meaning, the names have some inherent meaning. Now when it applies to HTML,then the meaning of a semantic html
+    element is an element that implies some meaning to the content. In other words, it's an element that tells you
+    something about the content, whether its importance, whether it's a little bit of its description, it basically
+    hints to you to that meaning.
+    <li>it may help search engine rankings. In other words, SEO and SEO stands for search engine optimization. <ul> Now
+            I stress may here because there is some controversy and disagreement among experts if this is really true.
+            Now experts who disagree with this say that modern search engines are so sophisticated nowadays that just
+            about nothing other than the content itself affects the ranking of the page.</ul>
+    </li>
+    <h3>Semantic tag:-</h3>
+    <li>
+        an example of the first type of semantic tags that we're going to look at, is headings tag.The HTML h1 to h6
+        elements represent six levels of section headings.And these headings are trying to convey is that the heading
+        content between opening h1 and the closing h1 element is the most important heading in the document, and on, and
+        on.so h1 is the highest section level and h6 is the lowest.
         <h1>Heading element</h1>
         <h2>Heading element</h2>
         <h3>Heading element</h3>
         <h4>Heading element</h4>
         <h5>Heading element</h5>
         <h6>Heading element</h6>
-     First, even though their default rendering in the browser appears to give them visual distinction, these should not be used for styling. These elements are only meant to convey structure of your HTML page, nothing more. With CSS, any regular development can be styled to look like any one of these heading tags.
-     <br>So, why not just use a div? Because if we did, we would lose the meaning of what a heading is. Second, something that's marked h1 is obviously the most important and generalized description of the content of this page. And while there are disagreements among the SEO experts about how effective these semantic tags are for helping your search engine rank in general, everyone agrees that when it comes to the heading tags, and specifically the h1 tag, that it is of utmost importance to use it and that it should contain the wording, which truly conveys the central topic of the rest of the content.
-   </li>
-<li>the header tag basically contains some header information about the page. So usually, it consists of company logo, some tagline, sometimes, navigation. Actually, often, navigation is contained within the header as well.</li>
-<li>The nav tag signifies some content that is used for navigation within our website.</li>
-<li>An aside tag is basically an element that communicates that there's something that is inside of this element that is related to the main content of the page, but not as direct a relationship as the main content.</li>
-<li>we have the footer tag, which, just like it sounds, has the footer information in it.</li>
-NOTE:- <i>semantic elements do allow you for more meaningful expression of the structure of your HTML code, HTML page, but they do not really give you any more functionality than a regular div or regular span would without it.
-</i> 
-</p>
-                                                                <!-- List -->                                                            
-
-<p>
-    <h3>List:-</h3>
-    The HTML li element is used to represent an item in a list. It must be contained in a parent element: an ordered list (ol), an unordered list (ul), or a menu (menu). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter. lists provide a natural and commonly used grouping for contennt. lists are an incredibly useful HTML structure that allows you to group related content. list are of two type
-<li>oredered list(ol)</li>
-<li>unordered list(ul)</li>
-NOTE:- <i> <b>text not allowed inside ul element only thing is allowed inside a ul element is an li element. Anything else is not allowed.</b></i>
-<h4>ORDERED LIST:-</h4>
-<ol>
-<li>in ordered list ,list element are displayed with an ascending counter on the left, such as a number or letter.</li>
-<li>ordered list within ordered list
-    <ol>
-        <li>by this way we use ordered list(<b>ol</b> ) within ordered list(<b>ol</b> ) or unorderd list(<b>ul</b> )</li>
-    </ol>
-</li>
-</ol>
-<h4>UNORDERED LIST(ul)</h4>
-<ul>
-    <li>
-        In menus and unordered lists, list items are usually displayed using bullet points.
+        First, even though their default rendering in the browser appears to give them visual distinction, these should
+        not be used for styling. These elements are only meant to convey structure of your HTML page, nothing more. With
+        CSS, any regular development can be styled to look like any one of these heading tags.
+        <br>So, why not just use a div? Because if we did, we would lose the meaning of what a heading is. Second,
+        something that's marked h1 is obviously the most important and generalized description of the content of this
+        page. And while there are disagreements among the SEO experts about how effective these semantic tags are for
+        helping your search engine rank in general, everyone agrees that when it comes to the heading tags, and
+        specifically the h1 tag, that it is of utmost importance to use it and that it should contain the wording, which
+        truly conveys the central topic of the rest of the content.
     </li>
-    <LI>unordered list within unorderedlist
-        <ul>
-            <li>by this way we use <b>ul</b> within <b>ul or ol</b></li>
-        </ul>
-    </LI>
-</ul>
-</p>  
-<!-- HTML Character Entity References -->
-<h1>HTML Character Entity References</h1>   
-<p>
-    Since HTML uses certain characters for its syntax, we need a way to differentiate between those characters as HTML and those same characters as content. If we want the browser to interpret special HTML characters as regular content, we need a way to escape them. In other words, we need a way to tell the browser not to interpret them as HTML.
-    <br>Specifically, there are three characters that should always be escaped to make sure they don't cause rendering issues, either right away or down the line. And these characters are the following. The less than  character, the greater than(>) character and the &.<br> Instead of using the less than character, you should use the HTML entity which starts with & and then followed by lt; (&lt;).
-    And similarly, for the > character,use HTML entity & and then followed by gt;(&gt;). And for the & it is & followed by amp; (&amp;).
-    <br>for copyright symbol we also use HTML entity refrence since in various keyboard there is no key for this so for copyright symbol the HTML entity refrences is & followedby copy (&copy;).
-    <br>now another HTML entity refrence is & followed by nbsp; this is use when you to write some text which is always together like some quotes so that while wrapping your text the particular text are always stay the same.for example victory&nbsp;nor&nbsp;defeat.
-    <br> NOTE:-but some time the total misuse of this entity as to add extra space between two words people use non breaking space entitywhich is wrong so for makin g space b/w two words you would probably wrap some text in span tag and then apply some margin.
-    <br>another HTML entity refrenceis & followed by quot;(& quot;)it's especially useful when somebody's trying to write an HTML based email. Since the email clients are notorious for using a much more limited character set than UTF-8, some of the characters sometimes get messed up.HTML entities safe guard against more limited character set encodings.
-</p>  
-<!-- creating links -->
-<p>
-    <h4>links:-</h4 >
-      links is created by specifying an <b><i> a element</i> with an attribute href</b>. And href stands for hypertext reference. The value of href can either be a relative or an absolute URL.internal links are relative URL link. 
-      the a tag is both a flow content and a phrasing content.the a tag(anchor tag) in the HTML5 is both an inline element and a block level element at the same time.
-     <br>URL:-URL stand for uniform resource locator.it give location of any thing in web page and it is unique.
-    <a href="../examples/"><div>html exercise</div></a>
-    The authors of the HTML5 specification realized that there are a lot of times where you would like to be able to click on a whole region. And a most common occurrence of that is on when you have a logo or some sort of a company name in the top left corner for example, of your webpage. People expect to be able to click on that and be able to go to the front page of the company. Prior to HTML5, people had to use all kinds of tricks in order to achieve that effect because the a tag was only an inline tag, and you weren't really able to wrap the a tag around the div tag.
+    <li>the header tag basically contains some header information about the page. So usually, it consists of company
+        logo, some tagline, sometimes, navigation. Actually, often, navigation is contained within the header as well.
+    </li>
+    <li>The nav tag signifies some content that is used for navigation within our website.</li>
+    <li>An aside tag is basically an element that communicates that there's something that is inside of this element
+        that is related to the main content of the page, but not as direct a relationship as the main content.</li>
+    <li>we have the footer tag, which, just like it sounds, has the footer information in it.</li>
+    NOTE:- <i>semantic elements do allow you for more meaningful expression of the structure of your HTML code, HTML
+        page, but they do not really give you any more functionality than a regular div or regular span would without
+        it.
+    </i>
     </p>
-    
+    <!-- List -->
+
+    <p>
+    <h3>List:-</h3>
+    The HTML li element is used to represent an item in a list. It must be contained in a parent element: an ordered
+    list (ol), an unordered list (ul), or a menu (menu). In menus and unordered lists, list items are usually displayed
+    using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a
+    number or letter. lists provide a natural and commonly used grouping for contennt. lists are an incredibly useful
+    HTML structure that allows you to group related content. list are of two type
+    <li>oredered list(ol)</li>
+    <li>unordered list(ul)</li>
+    NOTE:- <i> <b>text not allowed inside ul element only thing is allowed inside a ul element is an li element.
+            Anything else is not allowed.</b></i>
+    <h4>ORDERED LIST:-</h4>
+    <ol>
+        <li>in ordered list ,list element are displayed with an ascending counter on the left, such as a number or
+            letter.</li>
+        <li>ordered list within ordered list
+            <ol>
+                <li>by this way we use ordered list(<b>ol</b> ) within ordered list(<b>ol</b> ) or unorderd
+                    list(<b>ul</b> )</li>
+            </ol>
+        </li>
+    </ol>
+    <h4>UNORDERED LIST(ul)</h4>
+    <ul>
+        <li>
+            In menus and unordered lists, list items are usually displayed using bullet points.
+        </li>
+        <LI>unordered list within unorderedlist
+            <ul>
+                <li>by this way we use <b>ul</b> within <b>ul or ol</b></li>
+            </ul>
+        </LI>
+    </ul>
+    </p>
+    <!-- HTML Character Entity References -->
+    <h1>HTML Character Entity References</h1>
+    <p>
+        Since HTML uses certain characters for its syntax, we need a way to differentiate between those characters as
+        HTML and those same characters as content. If we want the browser to interpret special HTML characters as
+        regular content, we need a way to escape them. In other words, we need a way to tell the browser not to
+        interpret them as HTML.
+        <br>Specifically, there are three characters that should always be escaped to make sure they don't cause
+        rendering issues, either right away or down the line. And these characters are the following. The less than
+        character, the greater than(>) character and the &.<br> Instead of using the less than character, you should use
+        the HTML entity which starts with & and then followed by lt; (&lt;).
+        And similarly, for the > character,use HTML entity & and then followed by gt;(&gt;). And for the & it is &
+        followed by amp; (&amp;).
+        <br>for copyright symbol we also use HTML entity refrence since in various keyboard there is no key for this so
+        for copyright symbol the HTML entity refrences is & followedby copy (&copy;).
+        <br>now another HTML entity refrence is & followed by nbsp; this is use when you to write some text which is
+        always together like some quotes so that while wrapping your text the particular text are always stay the
+        same.for example victory&nbsp;nor&nbsp;defeat.
+        <br> NOTE:-but some time the total misuse of this entity as to add extra space between two words people use non
+        breaking space entitywhich is wrong so for makin g space b/w two words you would probably wrap some text in span
+        tag and then apply some margin.
+        <br>another HTML entity refrenceis & followed by quot;(& quot;)it's especially useful when somebody's trying to
+        write an HTML based email. Since the email clients are notorious for using a much more limited character set
+        than UTF-8, some of the characters sometimes get messed up.HTML entities safe guard against more limited
+        character set encodings.
+    </p>
+    <!-- creating links -->
+    <p>
+    <h4>links:-</h4>
+    links is created by specifying an <b><i> a element</i> with an attribute href</b>. And href stands for hypertext
+    reference. The value of href can either be a relative or an absolute URL.internal links are relative URL link.
+    the a tag is both a flow content and a phrasing content.the a tag(anchor tag) in the HTML5 is both an inline element
+    and a block level element at the same time.
+    <br>URL:-URL stand for uniform resource locator.it give location of any thing in web page and it is unique.
+    <a href="../examples/">
+        <div>html exercise</div>
+    </a>
+    The authors of the HTML5 specification realized that there are a lot of times where you would like to be able to
+    click on a whole region. And a most common occurrence of that is on when you have a logo or some sort of a company
+    name in the top left corner for example, of your webpage. People expect to be able to click on that and be able to
+    go to the front page of the company. Prior to HTML5, people had to use all kinds of tricks in order to achieve that
+    effect because the a tag was only an inline tag, and you weren't really able to wrap the a tag around the div tag.
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- lecture 15 pseudo class selector  -->
+    <p>
+    <h2>Pseudo-class selector2 :-</h2> address targeting only the structures that can be targeted by simple combinations
+    of regular selectors, or targeting the ability to style based on user interaction with the page.
+    there are many pseudo class selector but 5 are main.
+    <ol>
+        <h3>
+            <li>hover</li>
+            <li>link</li>
+            <li>visited</li>
+            <li>active</li>
+            <li>nth-child</li>
+        </h3>
+    </ol>
+    <ul>
+        <li>link, and visited means that HTML allows that after you click a particular link that a different style can
+            be applied to that link than an unclicked link.</li>
+        <li>
+            a element is both sort of an inline element and a block level element. However, that's only as far as
+            inclusion of other elements inside of it is concerned. s far as this default display, it's actually
+            displayed as an inline element. Well we don't want that for our buttons, we want them to block level
+            element. Well I can change that very quickly by just saying display: block.
+        </li>
+        <li>
+            when the user hovers over the element, in this case the a element. An active is that state when the user
+            actually clicks on the element but hasn't yet released his click.
+        </li>
+        <li>
+            the nth child pseudo-selector allows you to target a particular element within a list.
+        </li>
+    </ul>
+    </p>
+    <!-- lec 16- style placement  -->
+    <h1>styling</h1>
+    <p>
+
+        three type of styling
+        <li>inline css:-</li>
+    <p>in inline css he only thing that's missing is the target, and it's for a good reason, since we're inside the
+        element, so we don't really need a target any more </p>
+    <li>internal css</li>
+    <li>external css:-</li>
+    external css are linked by a link tag
+    <!-- <span><link rel="stylesheet" href=""></span> -->
+    </p>
+
+    <!-- lec 17 -->
+
+    <strong>CASCADING:-</strong> Cascading is a fundamental feature of CSS. It's an algorithm defining how to combine
+    properties values originating from different sources <br>
+    the cascade algorithm, is at the core of understanding and using CSS. The cascade combine the importance, origin,
+    specificity and source order of the applicable style declarations to determine exactly which declaration should be
+    applied to any given element. <br>
+    <strong>CONFLICT IN CSS:-</strong> there are conflict in css means When two declarations are in conflict, in other
+    words they specify the same property for the same target to solve this conflict there are four concept for this and
+    are following
+    <li><b>origin precedence </b>:- When two declarations are in conflict, origin precedence rule kicks in, and the rule
+        is last decleration wins . thatis the lower on the page they are, the more precedence they have. </li>
+    <li><b>merge</b>:-when different CSS declarations do not conflict, that is, they still target the same element, but
+        the CSS properties with which they target that element are different, then diclaration merge came in role. and
+        it state that if wo different properties are targeted to same element even they are targeted from two different
+        origin they will be merge in to one.</li>
+    <Li><b>Inheritance</b> basic idea is that you have the document object model tree. And if you specify some CSS
+        property on some element, all the children and grandchildren and so on and so on of that element will also
+        inherit that property without you having to specify the property for each and every element.</Li>
+    <li><b>specificity:-</b>specificity also has a pretty simple rule, and that is most specific selector combination
+        wins. go to pdf <a style="color: rgb(8, 20, 131);"
+            href="..//examples/pdf file/My Web/Lecture17-ConflictResolution.pdf"
+            target="blanck">Lecture17-ConflictResolution</a>
+        <br>
+        <!-- lec 18 styling text         -->
+
+        <H2>STYLING TEXT:- </H2>
+    <li><b> font-family:-</b> is a property name and value of property can be varry . It basically gives you commonly
+        used font combinations. So what you usually put in the font-family is the value is combinations of fonts.</li>
+    font-family:-is a property name and value of property can be varry . It basically gives you commonly used font
+    combinations. So what you usually put in the font-family is the value is combinations of fonts.</li>
+
+    <p><b><i>NOTE:-</i></b><I>the reason you put not just one font, but a few fonts is because when you specify
+            font-family in this way, you're relying on the client's computer, you're relying on the user's computer to
+            have that font installed. And it's possible that a particular font will not be installed on the user's
+            computer, so you want to provide some options, and at the very least, you want to provide whether you want a
+            serif type of font, or sans-serif type of font. Because every computer will have some sort of a default
+            serif or sans-serif font. And just in case you don't know the difference between Serif and Sans-Serif,
+            Serifs are the fonts that not only have the lines, but also have a bit of an embellishment at the end of
+            each line. So, as you can see, there's these little squigglies at the end of each line. As opposed to
+            Sans-Serif, they're just very straight lines.<B></B></I></p>
+
+    <li><b>font-style:-</b>he property font-style is the one that specifies whether or not you want something to be
+        italic or normal.</li>
+    <li><B>font-weight:-</B>but in practice people just use the word bold as a predefined keyword so that's also good
+        enough and about equals 900 anyway. </li>font-weight:-but in practice people just use the word bold as a
+    predefined keyword so that's also good enough and about equals 900 anyway. </li>
+    <li><b>text-transform:-</b>it allows you to basically control how your text looks.</li>
+    <li><b>font-size:-</b>points (pt) are used in print, not screen. very browser out there has a default font size of
+        16 pixels.
+        Pixels are what's considered absolute unit of measurement for size. However, they do have a bit of a relative
+        component to them. Pixels are relative to the viewing device. For low DPI or low dots per inch devices, one
+        pixel is one device pixel dot of the display. For printers and high-resolution screens, one pixels implies
+        multiple device pixels. Point is, higher DPI devices will give you sharper text, because for every pixel that
+        it's drawing, it's actually drawing multiple pixels on the device.</li>
+    <br>
+    <h2>relative font size:-</h2>
+    there are two units of measurements that are relative,and that is percent and ems.
+    <li><b>percent:-</b>it means is that we want to take whatever the default size is, and increase it by given
+        specified %. </li>
+    <li><b>em:-</b>em is a unit of measurement that is equivalent to the width of the letter em in this particular font
+        that we're using. It's relative to something. it's relative to whatever the font size is at the moment we're
+        applying it.When you specify them on subsequent elements, they don't have an overriding effect, they have a
+        cumulative effect instead. Because what you're saying here is whatever the size of this given element is, I want
+        you to increase it. Or I want you to make 2ems out of it, meaning, make it twice as large.</li>
+    <br>
+
+    <!-- lec-19 content box model -->
+    <h2>The Box Model:-</h2>
+    The box model refers to the components that make up an HTML box as well as the rules that govern how these box
+    components affect thelayout as well as how width and height of the box are calculated.
+    <br>
+    <li>the default browser style for margin is 8px </li>
+    <li>the box sizing is actually a property of every HTML element and by default it's actually set to content box,
+        which means when you specify it's height and width, you're specifying the height and width of the content box,
+        not the entire thing.means only content area not including padding and border only content box. which is fixed
+        it can't change even if you change border padding margin still the width is same as it is set to default on
+        context box. and here the width is denoting that area only which is inside content box.
+    <li>
+        Well CSS 3 came out with a new value for that property, and that's called border-box.in this box-sizing: border
+        box; the width is guaranteed to be the width of the box right from the one edge of border. To the other edge of
+        border
+    </li>
+    <li>all the modern frameworks like Bootstrap and others use box, border box as its sizing mode.</li>
+    <li>
+        box sizing is one of those CSS properties that is not inherited.You can't set it on the parent element and then
+        expect that the child elements will inherit that property. <br>
+        so to resolve this we haveone more selector called (*) star selector. <br>
+        box sizing being the border, box meaning that if I specified some width or some height, it will include, always
+        include from the edge of the border to the other edge of the border.
+    </li>
+    </li>
+    <li>
+        <star><b>Star Selector:-</b>star selector says is, go ahead and select every element there is and apply these
+            particular CSS properties to them.Which means it's as if it took this property and this value and then it
+            went to the HTML and it applied it to every element it saw. <br>
+            The difference between star and placing some property in a parent element for example is that star says I am
+            not asking you to inherit anything, I am saying select every element.
+    </li>
+    <li><b>margin:-</b> margins that are left to right are cumulative. <br>
+        marginthat are top to bottom are not commutative. and in this case the answer is the margins collapse, and the
+        larger margin wins.
+        <br>
+        Margins don't define the width of the box. Just define how far other elements should be pushed away from it.
+    </li>
+    <li>
+        they'll define some margin before the element and after the element.means for some html element browser itself
+        define some margin.and if you wanted to reset in, it's called CSS resetting, if you wanted to reset the CSS
+        browser defaults you would do this most of the time using the star selector. which s basically saying is that I
+        am selecting every element specifically, and then I'm overriding its properties.
+    </li><br>
+    <l>
+        <b>overflow:-</b>The CSS overflow property controls what happens to content that is too big to fit into an
+        area.The overflow property specifies whether to clip the content or to add scrollbars when the content of an
+        element is too big to fit in the specified area.
+        it has following value
+        <li><b>visible:-</b>Default. The overflow is not clipped. The content renders outside the element's box</li>
+        <li><b>hidden:-</b>The overflow is clipped, and the rest of the content will be invisible</li>
+        <li><b>scroll:-</b>The overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+        <li><b>auto:-</b>Similar to scroll, but it adds scrollbars only when necessary</li>
+        </li>
+
+        <!--            lec20-->
+
+        <h3>Background property:-</h3>
+        in background propertieswe have background-color,background-image,background-position, background-repeat etc.
+        <br>
+        and if we want we specify all above propert in one by using background property.
+        <li>the priority of background-imageis more than background-color
+        </li>
+        <li>images attach by using background-image property is being repeated and for this we have another property is
+            background-repeat</li>
+        <li>
+            in background-repeat we have different option. and no repeat will just put one image in the top left corner
+            by default.
+        </li>
+        <li>we can also specify the position of the image within the element by using background-position
+
+        </li>
+        <li>
+            used the background without the dash for a particular property, it's overriding every single property except
+            the ones that I'm actually specifying.
+        </li>
+        <li>
+            if you specify background-color specifically and then you go ahead and override it with the background, but
+            you don't specify the color or you don't specify whatever the specific property is, whether it's
+            background-image or background-repeat or background-position and so on. If you went ahead then and specified
+            background without any dash subproperty, whatever properties that are inherited with a dash will be
+            overridden unless you actually call them out directly, straight in the background property.
+        </li>
+        <!--            lec21 -->
+        <h3>positioning of element by floating
+        </h3>
+        <b>float:-</b>
+        The float CSS property places an element on the left or right side of its container, allowing text and inline
+        elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a
+        part of the flow.
+        <li>whenever you float elements, the browser takes them out of the regular document flow.</li>
+        <li>
+            Second thing to notice is that even though each one of these paragraph boxes has a margin around them, as
+            you can see that there's a margin between each one of them right here, that margin collapses as we've
+            learned before when it is touching the margin of another element. However, when it comes to floated
+            elements, the margins never collapse.
+        </li>
+        <li>When you float elements it takes them out of the regular document flow, therefore it collapses and hide, and
+            surrounds the last section element which has actually some text in it. In order to correct it, we need to
+            tell the browser that when it comes to this section element, the browser should resume the regular document
+            flow. And the way that we do that is by using the clear property. </li>
+        <li>clear: left. And what this is doing is telling the browser that the this particular element is announcing
+            that nothing should be allowed to be floating to the left of it. similarly for right </li>
+        <li>clear:both;. it will still insist that nothing should be floated to its left or to its righ</li>
+        <li> floats don't have vertical margin collapse, so previously hidden or collapsed margins will show up once you
+            float the element. And remember that to resume normal document flow, use the clear property. Either clear
+            left, clear right or clear both.</li>
+
+        <h3>two column layout design</h3>
+        <li>Note:- Pixel is a static measurement, while percent and EM are relative measurements. Percent depends on its
+            parent font size.Suppose there is a div which has width set to 100% , Its means it will occupy the full
+            width of its parent. It does not matter what the parent width is. Now imagine the same div with x pixel if
+            the parent width is more than x pixels then the div will renain x pixel width. In any scenario the child div
+            will not change the size.</li>
+        <li> The second paragraph is still on the bottom. Why is this happening? Well, the reason this is happening is
+            because we're still using the default box sizing, which is content box. Then we're saying that we want the
+            box to take 50% of the screen and then we're adding that one pixel border, that really breaks the whole
+            thing. So if we remove that pixel right here, and refresh the browser, now it's floating exactly how we want
+            it. And by the way, this is a great illustration of what happens to floated elements when they can't fit on
+            the same line. And what happens is they float to the next line. And this is actually what happened when we
+            had the border pushing the size of the box a little bit too much that it didn't fit on the same line
+            anymore.so how do we fix this? Well hopefully you still remember how to reset the box-sizing, and the
+            box-sizing we're going to say is border-box. And once we do that, the border will be included in the 50% of
+            the width. <br>
+            the layouts have a two column layout, and as I squeeze the browser, the two column layout stays, and not
+            only that, they're flexible. And the reason they're flexible is because we didn't specify them with a
+            particular pixel size, we specified them as a percentage of its containerelement.
+        </li>
+
+
+
+
+        </p>
+        <!-- lec-22-1 -->
+        <h3>relative and absolute element </h3>
+        <p>
+            CSS Position
+            The CSS position property is used to set position for an element. it is also used to place an element behind
+            another and also useful for scripted animation effect.
+
+            You can position an element using the top, bottom, left and right properties. These properties can be used
+            only after position property is set first. A position element's computed position property is relative,
+            absolute, fixed or sticky.
+        </p>
+        <li>
+            CSS Static Positioning:-This is a by default position for HTML elements. It always positions an element
+            according to the normal flow of the page. It is not affected by the top, bottom, left and right properties.
+        </li>
+
+        <li>CSS Fixed Positioning:-The fixed positioning property helps to put the text fixed on the browser. This fixed
+            test is positioned relative to the browser window, and doesn't move even you scroll the window.</li>
+        <li>
+            The relative positioning property is used to set the element relative to its normal position
+        </li>
+        <li>
+            CSS Relative Positioning:- CSS Absolute Positioning:-The absolute positioning is used to position an element
+            relative to the first parent element that has a position other than static. If no such element is found, the
+            containing block is HTML.
+
+            With the absolute positioning, you can place an element anywhere on a page.
+        </li>
+        <span><u>note:-</u>
+            Previously we spoke about one type of alternative element positioning and that's floating elements. I say
+            alternative because it is It is alternative to the normal document flow <br>
+            These positioning schemes allow you to specify precise offsets to move the target element to the different
+            part of the page origin.
+            <br>
+            Static positioning is basically a different way of saying normal document flow. It is actually a default
+            setting for all elements, except html. And if you try to apply positioning offsets on elements who's
+            position property is set to static, the offsets are just ignored <br>
+
+            A different type of positioning scheme is called relative positioning. When you apply position relative on
+            an element. The element is positioned relative toits position in the normal document flow. In other words,
+            if you were to apply offsets on that element, there will be offset, from the original normaldocument flow
+            position of that element. So the positioning CSS offset properties are top, bottom, left, and right. So when
+            you position element as relativeyou're basically creating like an anchor for the offsets. So the elements
+            top, bottom, left, and right edges become the boundaries from which you offset theelement. The important
+            thing to know about relative position is that the element that is set to relative positioning is not taken
+            out of normal documentflow. In fact even if it's moved by using the offsets, its original spot is preserved.
+            So as far as the rest of the HTML elements and the rest of the HTMLpage is concerned, that element is still
+            sitting in its original spot even though visually its off somewhere else. <br>
+            these offsets is really not top or left but more like from the top and from left. <br>
+            So if you take from left 50 pixels, you move 50 pixels to the right, and if you take from top 50 pixels,
+            you're really removing 50 pixels from the top. <br>
+            The original space for that element still remains and the originally laid out elements around that element
+            still remain exactly the same, because they thinkthe element is still sitting in its original spot. You can
+            also use negative values for these offsets and which one you use, bottom right or top left. <br>
+            the idea of absolute positioning is that all offsets, top, bottom, left, right, are all relative to the
+            position of the nearest ancestor which haspositioning set on it other than static. In other words, some
+            parent, grandparent, on and on and on, ancestor has to have its positioning set other thanstatic, and then
+            the absolute positioning will actually start working. By default, HTML element is the only element that has
+            non-static positioning set onit. And it's actually set to relative. Unlike relative positioning, the element
+            is taken out out of its normal document flow if it's positioning a set toabsolute. <br>
+
+            A really cool feature of this combination is, that if your container element, is itself offset, everything
+            inside of that container is offset with it. Soyou could set our particular layout with a container element.
+            And then move that container element, or offset it all around the screen, without worryingabout having to
+            offset particular values, of every element within that container element.
+        </span>
+        <br>
+        <p>By default, ALL HTML elements have their position property set to static.
+            False
+            Correct
+            All, except one: the 'html' element.
+        </p>
+
+
+
+
+
 
 </body>
-</html>                                                            
+
+</html>

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <!--  Bootstrap recommends you do, and basically just tells some versions of Internet Explorer that they should go ahead and use the latest version, or the latest compatibility version, of its rendering engine.  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,6 +15,7 @@
 
     <title>Bootstrap Starter Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Note that we declared our style after we declared the Bootstrap CSS styles. And the reason that is is because we're going to be customizing whatever Bootstrap gives us and, therefore, we want to be overriding what Bootstrap gives us, not having Bootstrap override what we are trying to style. -->
     <link rel="stylesheet" href="css/styles.css">
   </head>
 <body>
@@ -21,7 +23,9 @@
   <h1>Hello Coursera!</h1>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <!-- Bootstrap JavaScript depends on jQuery, and that means that we first have to declare jQuery and then we will declare and reference the bootstrap.js. And last, we reference our own JavaScript file, which is likely to be using either the jQuery or the Bootstrap JavaScript files. And again, if you go and actually take a look at that script.js, it's really just an empty file at this point. It's just a placeholder for our future script. Well, let's take a look at what this HTML file looks like in the browser. -->
   <script src="js/jquery-1.11.3.min.js"></script>
+  <!-- <script> src="js/jquery-3.5.0.mijs" </script> -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 </body>
